@@ -1,22 +1,26 @@
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
 
     const navbarItems = <>
         <li>
-            <p>About us</p>
+            <Link to="/">Home</Link>
         </li>
         <li>
-           <p>Services</p>
+            <Link to="/about">About us</Link>
         </li>
         <li>
-            <p>Blog</p>
+            <Link to="/services">Services</Link>
         </li>
         <li>
-            <p>Contact</p>
+            <Link to="/blog">Blog</Link>
         </li>
         <li>
-            <p>Cart</p>
+            <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+            <Link to="/login">Login</Link>
         </li>
     </>
 

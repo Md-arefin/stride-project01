@@ -1,9 +1,16 @@
+import Banner from "../Banner/Banner";
+import Carusal from "../Carusal/Carusal";
+import Parallax from "../Parallax/Parallax";
+import Testimonial from "../Testimonial/Testimonial";
 
 
 const Home = () => {
     return (
         <div>
-            <p>This is homePage</p>
+           <Banner/>
+           <Carusal/>
+           <Parallax/>
+           <Testimonial/>
         </div>
     );
 };
