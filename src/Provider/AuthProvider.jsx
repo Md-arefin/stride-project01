@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
-import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import {  createContext, useEffect, useState } from "react";
 import app from "../firebase/firebase.config";
 
@@ -67,7 +67,8 @@ const AuthProvider = ({ children }) => {
         signIn,
         googleSignIn,
         resetPassword,
-        logOut
+        logOut,
+        updateUserProfile
     }
 
     return (
